@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatherly - Your Simple Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>☁️</text></svg>">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1><i class="fas fa-cloud-sun"></i> Weatherly</h1>
+            <p class="subtitle">Enter your location and API key to get started</p>
+        </header>
+
+        <main class="main-content">
+            <form id="weather-form" class="input-form">
+                <div class="form-group">
+                    <label for="api-key">API Key</label>
+                    <input type="password" id="api-key" name="api-key" placeholder="Enter your OpenWeatherMap API key" required autocomplete="off">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" placeholder="e.g. London" required autocomplete="off">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <input type="text" id="country" name="country" placeholder="e.g. GB" maxlength="2" required autocomplete="off">
+                    </div>
+                </div>
+
+                <button type="submit" id="get-weather-btn" class="btn btn-primary">
+                    <i class="fas fa-search"></i> Get Weather
+                </button>
+            </form>
+
+            <div id="error-message" class="error-message" style="display: none;"></div>
+
+            <div id="weather-result" class="weather-result" style="display: none;"></div>
+        </main>
+
+        <footer class="app-footer">
+            <p>Powered by <a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap API</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
