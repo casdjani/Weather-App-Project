@@ -1,6 +1,6 @@
 # Weatherly
 
-A clean, modern, and minimalist weather web application built with HTML, CSS, and JavaScript. Weatherly fetches live weather data from the [OpenWeatherMap API](https://openweathermap.org/api).
+A clean, modern, and minimalist weather web application built with HTML, CSS, and JavaScript. Weatherly fetches live weather data from the [OpenWeatherMap API](https://openweathermap.org/api), where you could put your API Key, City and Country to check the weather.
 
 ---
 
